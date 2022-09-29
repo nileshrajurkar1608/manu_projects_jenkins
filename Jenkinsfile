@@ -9,9 +9,8 @@ pipeline {
 
         stage('Hai') {
             steps {
-                echo 'Hello World'
+                echo 'Hai World'
             }
         }
-
     }
 }
