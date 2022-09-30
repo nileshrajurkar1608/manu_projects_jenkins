@@ -36,7 +36,7 @@ pipeline {
         }
     }
 }
-
+maven-3.8.5
 
 // Environment variables for SSH UserName & Password
 // SSH_CRED_USR
