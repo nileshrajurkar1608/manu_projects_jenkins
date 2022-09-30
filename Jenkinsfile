@@ -26,5 +26,5 @@ pipeline {
     }
 }
 
-SSH_CRED_USR=centos
-
+SSH_CRED_USR
+SSH_CRED_PSW
