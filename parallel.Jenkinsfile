@@ -1,5 +1,6 @@
 pipeline {
-    agent { label: ANSIBLE } 
+    agent { 
+        label: ANSIBLE } 
     stages {
         stage('Parallel') {
             parallel {
