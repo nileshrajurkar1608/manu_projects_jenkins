@@ -1,8 +1,10 @@
 pipeline {
     agent any
     
+    environment {
+        ENV_URL = "pipeline.google.com"
+    }
 
-    
     stages {
         stage('Hello') {
             steps {
