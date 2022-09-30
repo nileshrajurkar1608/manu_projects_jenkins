@@ -25,3 +25,6 @@ pipeline {
         }
     }
 }
+
+SSH_CRED_USR=centos
+
