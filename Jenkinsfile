@@ -25,7 +25,6 @@ pipeline {
                     
             }
         }
-
         stage('Hello') {
             environment {
                 ENV_URL = "stage.google.com"
