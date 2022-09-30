@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        
+        stage('Paraller') {
             stage('One') {
                 steps {
                     echo "sleep 30"
