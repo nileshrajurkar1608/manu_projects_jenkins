@@ -21,6 +21,5 @@ pipeline {
                  sh "echo Environment URL is ${ENV_URL} " 
             }
         }
-
     }
 }
