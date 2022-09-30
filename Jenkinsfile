@@ -26,6 +26,7 @@ pipeline {
             }
         }
         stage('Hello') {
+             when { branch 'master' }
             environment {
                 ENV_URL = "stage.google.com"
             }
