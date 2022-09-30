@@ -19,7 +19,8 @@ pipeline {
             }
             steps {
                  sh "echo hai"  
-                 sh "echo Environment URL is ${ENV_URL} " 
+                 sh "echo Environment URL is ${ENV_URL}"
+                 sh "env" 
             }
         }
     }
