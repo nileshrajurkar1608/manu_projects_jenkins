@@ -9,7 +9,10 @@ pipeline {
 
         stage('Hai') {
             steps {
-                echo 'Hai World'
+                sh '''  echo hai
+                        echo hello
+                        echo we are learning jenkins
+                  '''
             }
         }
     }
