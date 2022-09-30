@@ -7,7 +7,7 @@ pipeline {
             parallel {
                 stage('One') {
                     steps {
-                        sh ""
+                        sh "hostname"
                         echo "sleep 30"
                     }
                 }
