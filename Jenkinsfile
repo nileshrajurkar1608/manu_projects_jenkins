@@ -16,7 +16,7 @@ pipeline {
         stage('Hai') {
             steps {
                 sh "echo hai"  
-                 sh "echo ${ENV_URL} " 
+                 sh "echo Environment URL is ${ENV_URL} " 
             }
         }
 
