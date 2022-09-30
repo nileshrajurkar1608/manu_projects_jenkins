@@ -15,8 +15,9 @@ pipeline {
 
         stage('Hai') {
             steps {
-                sh '''  echo hai
-                        echo hello
+                sh '''  
+                     echo hai
+                     echo hello
                         echo we are learning jenkins
                   '''
             }
