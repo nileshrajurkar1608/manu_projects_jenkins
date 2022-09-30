@@ -6,6 +6,10 @@ pipeline {
     }
  
    triggers { pollSCM('*/2 * * * *') }
+
+    tools {
+        maven 'maven-3.8.5' 
+    }
    
    parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
@@ -36,7 +40,7 @@ pipeline {
         }
     }
 }
-maven-3.8.5
+
 
 // Environment variables for SSH UserName & Password
 // SSH_CRED_USR
