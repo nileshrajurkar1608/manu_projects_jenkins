@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage('Hai') {
             steps {
-                sh '''  
-                  '''
+                sh ""  
+                    
             }
         }
 
