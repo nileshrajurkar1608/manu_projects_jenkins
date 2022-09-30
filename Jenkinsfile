@@ -6,9 +6,10 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
+        stage('Hai') {
             steps {
-                echo 'Hello World'
+                sh '''  
+                  '''
             }
         }
 
@@ -20,5 +21,8 @@ pipeline {
                   '''
             }
         }
+
+
+
     }
 }
