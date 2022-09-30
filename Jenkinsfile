@@ -15,11 +15,8 @@ pipeline {
 
         stage('Hai') {
             steps {
-                sh '''  
-                     echo hai
-                     echo hello
-                     echo we are learning jenkins
-                  '''
+                sh "echo hai"  
+                 sh "echo ${ENV_URL} " 
             }
         }
 
