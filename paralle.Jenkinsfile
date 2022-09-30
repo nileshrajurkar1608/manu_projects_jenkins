@@ -2,6 +2,7 @@ pipeline {
     agent any 
     stages {
         stage('Paraller') {
+            parallel {
             stage('One') {
                 steps {
                     echo "sleep 30"
@@ -19,5 +20,6 @@ pipeline {
                     echo "sleep 30"
                 }
             }
+        }
     }
 }
