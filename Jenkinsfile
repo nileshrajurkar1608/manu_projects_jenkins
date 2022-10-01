@@ -7,14 +7,17 @@ pipeline {
     stages {
         stage('variable') {
             steps {
-                sh "echo ${ENV_URL}"  
+                sh "echo Global variable is ${ENV_URL}"  
             }
         }
 
         stage('Hai') {
+            environment {
+                ENV_URL = "stage.google.com"
+            }
             steps {
                 sh "echo hai"
-                sh "echo Environment URL is ${ENV_URL}"
+                sh "echo Local variable is ${ENV_URL}"
             }
 
         }
