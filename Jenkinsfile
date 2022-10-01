@@ -31,6 +31,8 @@ pipeline {
                 sh "echo hai"
                 sh "echo Local variable is ${ENV_URL}"
                 sh "env"
+                sh "echo I will be running maven command"
+                sh "mvn clean"
             }
 
         }
