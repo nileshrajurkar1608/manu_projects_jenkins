@@ -4,6 +4,7 @@ pipeline {
         ENV_URL     = "pipeline.google.com"
         SSH_CRED    = credentials('SSH')
     }
+    
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
@@ -12,6 +13,9 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
 
+    triggers {
+            cron('*/2 * * * *')
+        }
     stages {
         stage('variable') {
             steps {
