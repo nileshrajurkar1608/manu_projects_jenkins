@@ -1,7 +1,5 @@
 pipeline {
-    agent { 
-        label 'ANSIBLE' 
-        } 
+    agent any    
     stages {
         stage('Parallel') {
             parallel {
@@ -32,3 +30,8 @@ pipeline {
         }
     }
 }
+
+
+// { 
+//         label 'ANSIBLE' 
+//         } 
