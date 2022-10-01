@@ -1,7 +1,8 @@
 pipeline {
     agent any
     environment {
-        ENV_URL = "pipeline.google.com"
+        ENV_URL     = "pipeline.google.com"
+        SSH_CRED    = credentials('SSH')
     }
 
     stages {
@@ -18,6 +19,7 @@ pipeline {
             steps {
                 sh "echo hai"
                 sh "echo Local variable is ${ENV_URL}"
+                sh "env"
             }
 
         }
