@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    environment{
+    environment {
         ENV_URL = "pipeline.google.com"
     }
 
