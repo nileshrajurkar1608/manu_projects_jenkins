@@ -39,3 +39,4 @@ pipeline {
 // environment variable for ssh username and pass
 // SSH_CRED_USR
 // SSH_CRED_PSW
+// some changes
